@@ -22,12 +22,91 @@
             &ensp; CONTACT</a>
       </div>
 
-      <img src="mee.jpg" class="all ali" alt="Pineapple" width="300" height="300">
+      <img src="mee1.jpg" class="all ali" alt="Pineapple" width="300" height="340">
     
 <h3 class="int"><br><b>INTRODUCING OUR SELF</b></h3>    
     
-    <p><b>WEE CREATE A BASIC WEBSITE'S AND LEARNING...</b></p>
-    
-    
+    <p><b>&ensp; WEE CREATE A BASIC WEBSITE'S AND LEARNING...</b></p>
+   <ul><h3 class="ski">EDITING SKILLS</h3></ul>
+    <ul>
+        <li class="white"><b>EDIT ADOBE PHOTOSHOP</b></li>
+        <br>
+        <li class="white"><b>BASIC PREMIRE PRO LEARNED</b></li>
+        <br>
+        <li class="white"><b>MOKE UP LOGO DESIGHNER</b></li>
+        <br>
+        <li class="white"><b>AND...ILLUSTER,PAINT,</b></li>]
+        <br>
+        <li class="white"><b>YOUTUBE THUMBNAIL MAKING</b></li>
+        <br>
+      </ul>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="tu1.jpg" style="width:100%">
+          <div class="text"><b>CUSTOM THUMBNAIL FOR YOUTUBE</b></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="tu2.jpg" style="width:100%">
+          <div class="text"><b>CUSTOM THUMBNAIL FOR YOUTUBE</b></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="tu3.jpg" style="width:100%">
+          <div class="text"><b>CUSTOM THUMBNAIL FOR YOUTUBE</b></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="tu4.jpg" style="width:100%">
+            <div class="text"><b>CUSTOM THUMBNAIL FOR YOUTUBE</b></div>
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <p class="mar"></p>
     </body>
 </html>
