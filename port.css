@@ -72,8 +72,8 @@ ul li::before {
   margin-left: -1em;
 }
 .white{
-
-  color: rgb(19, 17, 17);
+  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.815);
+  color: rgb(250, 241, 241);
 }
 .ski{
 
